@@ -114,9 +114,12 @@ p {
 .hero .one-third {
     border-radius: 0 0 0 140px;
     overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    /* Keep the complete bg_2 image visible on every screen size */
+    background-color: #000000 !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
 .hero .text {
@@ -1516,6 +1519,8 @@ p {
 
     .hero .one-third {
         border-radius: 0;
+        background-position: center center !important;
+        background-size: contain !important;
     }
 
     .heading-section .big {
@@ -3345,7 +3350,7 @@ loadImageWithFallback(
 
 loadImageWithFallback(
     document.getElementById('project-customer'),
-    'proj_4'
+    'proj_3'
 );
 
 
